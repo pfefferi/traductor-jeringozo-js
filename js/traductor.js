@@ -1,4 +1,3 @@
-const $output = document.querySelector('#output');
 const $button = document.querySelector('#button');
 
 function getInput() {
@@ -31,7 +30,12 @@ function traductor(palabraEnSilabas) {
             traduccion += 'pi ';
         }
     });
-    console.log(traduccion);
+    giveOutput(traduccion);
+}
+
+function giveOutput(output) {
+    const $output = document.querySelector('#output');
+    $output.value = output;
 }
 
 $button.onclick = function () {
