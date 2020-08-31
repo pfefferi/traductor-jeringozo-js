@@ -68,6 +68,7 @@ function mostrarErrores(errores) {
     removeClass();
     removeError();
     addError(errores);
+    giveOutput('');
 }
 
 function removeClass() {
