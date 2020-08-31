@@ -54,7 +54,7 @@ function validarInput(input) {
     if (input.trim().length === 0) {
         return 'El texto a traducir debe contener al menos un caracter.';
     }
-    if (!/^[a-z]+$/i.test(input)) {
+    if (!/^[a-z ]+$/i.test(input)) {
         return 'El texto debe contener unicamente letras.';
     } else {
         return '';
